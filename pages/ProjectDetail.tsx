@@ -14,6 +14,21 @@ const ProjectDetail: React.FC = () => {
     if (project?.image.includes('/nonnuoc/')) {
       return Array.from({ length: 10 }, (_, i) => `/nonnuoc/nonnuoc${i + 1}.jpg`);
     }
+    if (project?.image.includes('/SILBER/')) {
+      return Array.from({ length: 14 }, (_, i) => `/SILBER/${i + 1}.jpg`);
+    }
+    if (project?.image.includes('/LAPINMIGNON/')) {
+      return Array.from({ length: 24 }, (_, i) => `/LAPINMIGNON/${i + 1}.jpg`);
+    }
+    if (project?.image.includes('/SweetAsCandy/')) {
+      return Array.from({ length: 6 }, (_, i) => `/SweetAsCandy/${i + 1}.jpg`);
+    }
+    if (project?.image.includes('/CERAMIC/')) {
+      return Array.from({ length: 12 }, (_, i) => `/CERAMIC/${i + 1}.jpg`);
+    }
+    if (project?.image.includes('/VietgangzGlampingClub/')) {
+      return Array.from({ length: 26 }, (_, i) => `/VietgangzGlampingClub/${i + 1}.jpg`);
+    }
     return [project?.image || ''];
   };
 
@@ -98,13 +113,13 @@ const ProjectDetail: React.FC = () => {
           </div>
 
           {/* Right Column - ImageSwiper */}
-          <div className="flex-1 w-full flex justify-center items-center lg:min-h-[600px]">
-            <div className="w-full max-w-[280px] sm:max-w-[350px] lg:max-w-[400px]">
+          <div className="flex-1 w-full flex justify-center items-center lg:min-h-[700px]">
+            <div className="w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[500px]">
               <ImageSwiper 
                 cards={cardData}
-                cardWidth={280}
-                cardHeight={420}
-                className="w-full scale-75 sm:scale-90 lg:scale-100 origin-center"
+                cardWidth={320}
+                cardHeight={480}
+                className="w-full scale-90 sm:scale-100 lg:scale-110 origin-center"
               />
             </div>
           </div>

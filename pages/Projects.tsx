@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
                   ))}
                 </div>
                 <h3 className="text-xl md:text-3xl font-bold text-gray-900 dark:text-white">{project.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm md:text-lg">
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm md:text-lg whitespace-pre-line">
                   {project.description}
                 </p>
                 <button 
